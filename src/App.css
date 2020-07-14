@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Cloud-Light';
+  src: url(./static/fonts/Cloud-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Cloud-Bold';
+  src: url(./static/fonts/Cloud-Bold.otf) format('opentype');
+}
+
 .App {
   text-align: center;
+  font-family: 'Cloud-Light';
 }
 
 .App-logo {

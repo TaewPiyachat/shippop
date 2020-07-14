@@ -2,7 +2,6 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import 'antd/dist/antd.css'
-
 import { Button } from 'antd'
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
           Edit
           {' '}
           <code>src/App.js</code>
-          {' '}
-          and save to reload.
+          <span>สวัสดี</span>
         </p>
         <Button>Button</Button>
         <a
