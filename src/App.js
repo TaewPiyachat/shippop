@@ -1,32 +1,28 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import styled from 'styled-components'
+
+// import { Layout } from './components/layout'
+import { Header } from './components/header'
+import { Carousel } from './components/carousel'
+
 import 'antd/dist/antd.css'
-import { Button } from 'antd'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={ logo } className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          <span>สวัสดี</span>
-        </p>
-        <Button>Button</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header />
+      <Carousel />
+    </Layout>
   )
 }
 
 export default App
+
+const Layout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`

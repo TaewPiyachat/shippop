@@ -8,9 +8,12 @@
   src: url(./static/fonts/Cloud-Bold.otf) format('opentype');
 }
 
+body {
+  font-family: 'Cloud-Light';
+}
+
 .App {
   text-align: center;
-  font-family: 'Cloud-Light';
 }
 
 .App-logo {
