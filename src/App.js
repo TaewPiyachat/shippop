@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Header } from './components/header'
 import { Carousel } from './components/carousel'
 import { Partner } from './components/partner'
+import { Service } from './components/service'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Carousel />
       <Partner />
+      <Service />
     </Layout>
   )
 }
