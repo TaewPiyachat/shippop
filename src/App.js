@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// import { Layout } from './components/layout'
 import { Header } from './components/header'
 import { Carousel } from './components/carousel'
+import { Partner } from './components/partner'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -13,6 +13,7 @@ function App() {
     <Layout>
       <Header />
       <Carousel />
+      <Partner />
     </Layout>
   )
 }

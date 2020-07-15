@@ -20,39 +20,39 @@ export const Dropdown = props => {
 }
 
 const CustomDropdown = styled(AntdDropdown)`
-    width: 45px;
-    height: 41px;
-    color: #959595;
-    font-size: 1.25em;
-    padding: 7px 10px;
-    background: #ebebeb;
-    border-radius: 5px;
+  width: 45px;
+  height: 41px;
+  color: #959595;
+  font-size: 1.25em;
+  padding: 7px 10px;
+  background: #ebebeb;
+  border-radius: 5px;
 
-    :hover {
-        background: #0b9dd1;
-        color: #fff;
-        border: 1px solid #0b9dd1;
-    }
+  :hover {
+      background: #0b9dd1;
+      color: #fff;
+      border: 1px solid #0b9dd1;
+  }
 `
 
 const Menu = styled(AntdMenu)`
-    background: #ebebeb;
-    padding: 0;
-    height: 41px;
+  background: #ebebeb;
+  padding: 0;
+  height: 41px;
 `
 
 const MenuItem = styled(Menu.Item)`
-    width: 45px;
-    height: 41px;
-    color: #959595;
-    font-size: 1.25em;
-    border-radius: 0 0 5px 5px;
-    border: 1px solid #ccc;
-    padding: 10px 12px;
+  width: 45px;
+  height: 41px;
+  color: #959595;
+  font-size: 1.25em;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
 
-    :hover {
-        background: #0b9dd1;
-        color: #fff;
-        border: 1px solid #0b9dd1;
-    }
+  :hover {
+      background: #0b9dd1;
+      color: #fff;
+      border: 1px solid #0b9dd1;
+  }
 `
