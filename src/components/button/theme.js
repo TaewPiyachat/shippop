@@ -12,4 +12,10 @@ export const buttonStyle = {
         color: #959595;
     }
   `,
+  white: `
+  font-size: 1.25em;
+  border-radius: 5px;
+  background: #fff;
+  color: #58595b;
+`,
 }

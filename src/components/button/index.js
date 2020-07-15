@@ -6,10 +6,10 @@ import { Button as AntdButton } from 'antd'
 import { buttonStyle } from './theme'
 
 export const Button = props => {
-  const { children, ...rest } = props
+  const { children, theme = 'primary', ...rest } = props
 
   return (
-    <CustomButton theme='primary' style={ rest }>
+    <CustomButton theme={ theme } style={ rest }>
       {children}
     </CustomButton>
   )

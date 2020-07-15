@@ -5,6 +5,7 @@ import { Header } from './components/header'
 import { Carousel } from './components/carousel'
 import { Partner } from './components/partner'
 import { Service } from './components/service'
+import { Tab } from './components/tab'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -16,6 +17,7 @@ function App() {
       <Carousel />
       <Partner />
       <Service />
+      <Tab />
     </Layout>
   )
 }
