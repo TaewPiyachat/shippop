@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FiMapPin } from 'react-icons/fi'
 
 import { Input } from '../input'
 import { Text } from '../text'
@@ -22,7 +23,10 @@ export const Menu = () => {
           </Link>
         ))}
       </MenuGroup>
-      <Input />
+      <Wrapper>
+        <Input placeholder='กรอกหมายเลขพัสดุ' />
+        <Icon />
+      </Wrapper>
     </Root>
   )
 }
@@ -40,4 +44,16 @@ const MenuGroup = styled.div`
 
 const Link = styled.a`
   padding: 15px 35px 0 10px;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+`
+
+const Icon = styled(FiMapPin)`
+  font-size: 26px;
+  margin: 10px;
 `

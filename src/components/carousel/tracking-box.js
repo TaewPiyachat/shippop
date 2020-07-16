@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { TiCalculator } from 'react-icons/ti'
+import { Input as AntdInput } from 'antd'
 
-import { Input, InputWithButton } from '../input'
+import { Input } from '../input'
 import { Button } from '../button'
 
 export const TrackingBox = () => {
@@ -21,7 +23,7 @@ export const TrackingBox = () => {
         </Text>
         <Input placeholder='รหัสปณ. ต้นทาง' />
         <Input placeholder='รหัสปณ. ปลายทาง' />
-        <InputWithButton placeholder='รหัสปณ. ปลายทาง' enterButton />
+        <Search placeholder='รหัสปณ. ปลายทาง' enterButton={ <TiCalculator /> } />
         <Button>ตรวจเช็คราคา</Button>
       </Wrapper>
     </Root>
@@ -68,4 +70,40 @@ const Wrapper = styled.div`
 const Text = styled.span`
   font-size: 1.1em;
   color: #333333;
+`
+
+const Search = styled(AntdInput.Search)`
+  .ant-input-group .ant-input {
+    height: 40px;
+    background: #ebebeb;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+
+    ::placeholder {
+      color: #333333;
+    }
+  }
+
+  [type="button"] {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    box-shadow: none;
+    font-size: 20px;
+    color: rgb(11, 157, 209);
+    padding: 0;
+
+    :hover {
+      color: rgb(255, 255, 255);
+      background: rgb(11, 157, 209);
+    }
+  }
 `

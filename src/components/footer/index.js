@@ -20,6 +20,7 @@ export const Footer = () => {
           </EmailText>
           <Input
             placeholder='กรอกอีเมล์เพื่อรับข่าวสาร'
+            enterButton='ส่ง'
           />
         </EmailSection>
         <Column>
