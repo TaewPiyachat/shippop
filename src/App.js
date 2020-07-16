@@ -8,6 +8,7 @@ import { Service } from './components/service'
 import { Tab } from './components/tab'
 import { Article } from './components/article'
 import { Testimonial } from './components/testimonial'
+import { Press } from './components/press'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -22,6 +23,7 @@ function App() {
       <Tab />
       <Article />
       <Testimonial />
+      <Press />
     </Layout>
   )
 }
