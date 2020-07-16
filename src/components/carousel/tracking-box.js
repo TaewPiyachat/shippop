@@ -32,7 +32,8 @@ export const TrackingBox = () => {
 
 const Root = styled.div`
   height: 94px;
-  width: 910px;
+  max-width: 910px;
+  width: 100%;
   position: absolute;
   top: 340px;
   margin-left: 20px;

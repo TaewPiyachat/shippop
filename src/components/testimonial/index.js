@@ -97,7 +97,8 @@ const CustomerGroup = styled.div`
 `
 
 const Customer = styled.div`
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
     padding: 0 5px;
     display: flex;
     flex-direction: column;

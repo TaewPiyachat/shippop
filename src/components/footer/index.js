@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaFacebookF, FaInstagram, FaLine } from 'react-icons/fa'
+import { IoLogoYoutube } from 'react-icons/io'
 
 import { InputWithButton } from '../input'
 import { Button } from '../button'
@@ -67,6 +69,10 @@ export const Footer = () => {
       </Wrapper>
       <Copyright>
         <Text>© Copyright 2015 - 2018 All Rights Reserved by SHIPPOP</Text>
+        <FaFacebookF style={ { marginLeft: 40 } } />
+        <FaInstagram />
+        <FaLine />
+        <IoLogoYoutube />
       </Copyright>
     </Root>
   )
@@ -140,4 +146,10 @@ const Link = styled.a`
 
 const Copyright = styled.div`
     padding: 20px;
+
+    svg {
+      font-size: 20px;
+      margin: 0 4px;
+      color: rgba(255,255,255,.7);
+    }
 `

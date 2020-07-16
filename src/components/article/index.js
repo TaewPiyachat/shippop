@@ -79,13 +79,13 @@ const Headline3 = styled.h3`
 `
 
 const ItemGroup = styled.div`
-    display: flex;
-    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 245px));
     margin-bottom: 20px;
 `
 
 const Item = styled.div`
-    width: 245px;
     height: 100%;
     border-radius: 5px;
     background: #f8f8f8;
@@ -100,6 +100,7 @@ const Item = styled.div`
 
 const Image = styled.div`
     height: 125px;
+    width: auto;
     background-image: ${p => `url(${p.src})`};
     background-size: cover;
 `

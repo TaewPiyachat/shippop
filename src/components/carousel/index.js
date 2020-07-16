@@ -47,6 +47,10 @@ const Root = styled.div`
     width: 16px;
   }
 
+  .slick-dots li button:before {
+    content: '';
+  }
+
   .ant-carousel .slick-dots-bottom {
     max-width: 1000px;
     display: flex;
@@ -86,7 +90,7 @@ const Image = styled.div`
   background-image: ${p => `url(${p.url})`};
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 `
 
 const DescriptionWrapper = styled.div`

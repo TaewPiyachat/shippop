@@ -58,6 +58,7 @@ const Root = styled.div`
 
 const SliderWrapper = styled.div`
   max-width: 1000px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding-top: 12px;
