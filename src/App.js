@@ -9,6 +9,7 @@ import { Tab } from './components/tab'
 import { Article } from './components/article'
 import { Testimonial } from './components/testimonial'
 import { Press } from './components/press'
+import { Footer } from './components/footer'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -24,6 +25,7 @@ function App() {
       <Article />
       <Testimonial />
       <Press />
+      <Footer />
     </Layout>
   )
 }

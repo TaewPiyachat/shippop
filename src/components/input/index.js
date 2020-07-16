@@ -49,5 +49,6 @@ const Search = styled(AntdInput.Search)`
   border: none;
   border-left: 1px solid #ccc;
   border-radius: 0 5px 5px 0;
+  box-shadow: none;
 }
 `
