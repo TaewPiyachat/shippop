@@ -108,6 +108,6 @@ const LanguageButton = styled.div`
 const Contact = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 20px;
   color: #333;
 `

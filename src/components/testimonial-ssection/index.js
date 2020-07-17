@@ -55,6 +55,7 @@ const Headline2 = styled.h2`
   color: #0b9dd2;
   margin: 5px 0;
   padding-bottom: 5px;
+  text-align: center;
 `
 
 const Headline3 = styled.h3`

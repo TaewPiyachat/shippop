@@ -50,6 +50,7 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 
   .slick-slider {
     width: 100%;

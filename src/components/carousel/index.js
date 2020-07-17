@@ -68,14 +68,14 @@ const Root = styled.div`
   @media (max-width: 768px) {
     margin-top: 50px;
     height: 400px;
-
-    .ant-carousel .slick-dots-bottom {
-      top: -50px;
-    }
   }
 
-  @media (max-width: 488px) {
+  @media (max-width: 480px) {
     height: 200px;
+
+    .ant-carousel .slick-dots-bottom {
+      top: -310px;
+    }
   }
 `
 

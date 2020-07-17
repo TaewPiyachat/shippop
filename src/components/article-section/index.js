@@ -54,6 +54,7 @@ const Headline2 = styled.h2`
   color: #0b9dd2;
   margin: 5px 0;
   padding-bottom: 5px;
+  text-align: center;
 `
 
 const Headline3 = styled.h3`
@@ -61,11 +62,12 @@ const Headline3 = styled.h3`
   color: #58595b;
   margin-top: -5px;
   margin-bottom: 25px;
+  text-align: center;
 `
 
 const ItemGroup = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 250px);
   margin-bottom: 20px;
   grid-gap: 10px;
 
@@ -74,7 +76,12 @@ const ItemGroup = styled.div`
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 190px);
+  }
+
+  @media (max-width: 375px) {
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 0;
   }
 `
 

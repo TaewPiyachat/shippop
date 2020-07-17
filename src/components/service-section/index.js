@@ -35,6 +35,7 @@ const Headline2 = styled.h2`
   color: #0b9dd2;
   margin: 5px 0;
   padding-bottom: 5px;
+  text-align: center;
 `
 
 const Headline3 = styled.h3`
@@ -42,6 +43,7 @@ const Headline3 = styled.h3`
   color: #58595b;
   margin-top: -5px;
   margin-bottom: 25px;
+  text-align: center;
 `
 
 const ServiceGroup = styled.div`
