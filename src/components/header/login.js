@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaTruckMoving } from 'react-icons/fa'
+import { FaTruckMoving, FaUserCircle } from 'react-icons/fa'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { FiKey } from 'react-icons/fi'
 
 import { Button } from '../button'
 import { Dropdown } from '../dropdown'
 
-export const Login = () => {
+export const Login = ({ setOpenSidebar }) => {
   return (
     <Root>
       <Image alt='SHIPPOP' src='//www.shippop.com/assets/images/frontpage/logo_shippop.png?v=1.03498' />
@@ -27,10 +28,16 @@ export const Login = () => {
         </Button>
         <Dropdown />
       </Group>
+      <IconGroup>
+        <TruckIcon />
+        <FaUserCircle />
+        <GiHamburgerMenu onClick={ setOpenSidebar } />
+      </IconGroup>
     </Root>
   )
 }
 const Root = styled.div`
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -40,11 +47,35 @@ const Root = styled.div`
 const Image = styled.img`
   width: 191px;
   height: 40px;
+
+  @media (max-width: 768px) {
+    height: 32px;
+    width: auto;
+  }
 `
 
 const Group = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const IconGroup = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 24px;
+      color: #959595;
+      margin: 8px;
+    }
+  }
 `
 
 const Tracking = styled.div`

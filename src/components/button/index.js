@@ -17,5 +17,6 @@ export const Button = props => {
 
 const CustomButton = styled(AntdButton)`
   ${p => buttonStyle[p.theme]};
+  width: 100%;
   height: 41px;
 `

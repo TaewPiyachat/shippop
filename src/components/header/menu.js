@@ -5,13 +5,7 @@ import { FiMapPin } from 'react-icons/fi'
 import { Input } from '../input'
 import { Text } from '../text'
 
-const menu = [
-  { name: 'หน้าแรก', path: '/' },
-  { name: 'บริการของเรา', path: '/' },
-  { name: 'คำถามที่พบบ่อย', path: '/' },
-  { name: 'เครื่องมือ', path: '/' },
-  { name: 'ติดต่อเรา', path: '/' },
-]
+import { menu } from '../data'
 
 export const Menu = () => {
   return (
@@ -36,6 +30,10 @@ const Root = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const MenuGroup = styled.div`

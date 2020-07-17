@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { Button } from '../button'
 
-export const Tab = () => {
+export const TabSection = () => {
   return (
     <Root>
       <TabWrappr>
@@ -24,42 +24,54 @@ export const Tab = () => {
 }
 
 const Root = styled.div`
-    width: 100%;
-    height: 140px;
-    background-color: #0b9dd2;
-    color: #fff;
+  width: 100%;
+  min-height: 140px;
+  background-color: #0b9dd2;
+  color: #fff;
 `
 
 const TabWrappr = styled.div`
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px 0;
-    max-width: 840px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 840px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const Group = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const Image = styled.img`
-    max-width: 100%;
+  max-width: 100%;
 `
 
 const TextWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `
 
 const Title = styled.span`
-    font-size: 1.5em;
+  font-size: 1.5em;
 `
 
 const Caption = styled.span`
-    color: rgba(255,255,255,.7);
-    max-width: 450px;
+  color: rgba(255,255,255,.7);
+  max-width: 450px;
 `

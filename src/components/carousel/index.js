@@ -4,14 +4,9 @@ import styled from 'styled-components'
 import { Carousel as AntdCarousel } from 'antd'
 
 import { TrackingBox } from './tracking-box'
+import { carousel_images } from '../data'
 
 import * as FONTS from '../../constant'
-
-const images = [
-  'https://www.shippop.com/assets/images/frontpage/slider/slide1.png?v=1497285980',
-  'https://www.shippop.com/assets/images/frontpage/slider/slide2.png?v=1497285980',
-  'https://www.shippop.com/assets/images/frontpage/slider/slide3.png?v=1497285980',
-]
 
 export const Carousel = () => {
   return (
@@ -27,8 +22,8 @@ export const Carousel = () => {
         <TrackingBox />
       </DescriptionWrapper>
       <AntdCarousel>
-        { images.map((i, key) => (
-          <Background idx={ key }>
+        { carousel_images.map((i, key) => (
+          <Background idx={ key } key={ key }>
             <Image url={ i } />
           </Background>
         )) }
@@ -69,6 +64,19 @@ const Root = styled.div`
       border-radius: 20px;
     }
   }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    height: 400px;
+
+    .ant-carousel .slick-dots-bottom {
+      top: -50px;
+    }
+  }
+
+  @media (max-width: 488px) {
+    height: 200px;
+  }
 `
 
 const Background = styled.div`
@@ -91,6 +99,14 @@ const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media (max-width: 488px) {
+    height: 200px;
+  }
 `
 
 const DescriptionWrapper = styled.div`
@@ -112,6 +128,10 @@ const DescriptionBox = styled.div`
   background-color: rgba(10,142,190,.85);
   color: #fff;
   padding: 0 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Headline1 = styled.h1`

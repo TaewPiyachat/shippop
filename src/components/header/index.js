@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import { Login } from './login'
 import { Menu } from './menu'
 
-export const Header = () => {
+export const Header = ({ setOpenSidebar }) => {
   return (
     <Root>
       <Wrapper>
-        <Login />
+        <Login setOpenSidebar={ setOpenSidebar } />
         <Menu />
       </Wrapper>
     </Root>
@@ -25,6 +25,11 @@ const Root = styled.div`
   top: 0;
   padding: 20px 0;
   z-index: 999;
+
+  @media (max-width: 768px) {
+    height: 50px;
+    padding: 10px;
+  }
 `
 
 const Wrapper = styled.div`

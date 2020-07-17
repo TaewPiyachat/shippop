@@ -20,6 +20,7 @@ export const Footer = () => {
             <br />
             และเลือกใช้บริการ
           </EmailText>
+          <br />
           <Input
             placeholder='กรอกอีเมล์เพื่อรับข่าวสาร'
             enterButton='ส่ง'
@@ -79,77 +80,104 @@ export const Footer = () => {
 }
 
 const Root = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    min-height: 150px;
-    background: linear-gradient(rgb(11, 157, 210) 0%, rgb(11, 157, 210) 27%, rgb(11, 156, 209) 30%, rgb(4, 130, 176) 100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  min-height: 150px;
+  background: linear-gradient(rgb(11, 157, 210) 0%, rgb(11, 157, 210) 27%, rgb(11, 156, 209) 30%, rgb(4, 130, 176) 100%);
 `
 
 const Wrapper = styled.div`
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const EmailSection = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    img {
-        width: 160px;
-    }
+  img {
+      width: 160px;
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `
 
 const EmailText = styled.span`
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 10px;
-    font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+  font-size: 1.1em;
 `
 
 const Input = styled(InputWithButton)`
-    border-radius: 0 5px 5px 0;
-    [type="button"] {
-        height: 40px;
-        background: rgb(2, 118, 160) !important;
-        border: none;
-        border-left: 1px solid #ccc;
-        border-radius: 0 5px 5px 0;
-        box-shadow: none;
-    }
-    .ant-input-group-addon {
-        border-radius: 0 5px 5px 0;
-    }
+  border-radius: 0 5px 5px 0;
+  [type="button"] {
+      height: 40px;
+      background: rgb(2, 118, 160) !important;
+      border: none;
+      border-left: 1px solid #ccc;
+      border-radius: 0 5px 5px 0;
+      box-shadow: none;
+  }
+  .ant-input-group-addon {
+      border-radius: 0 5px 5px 0;
+  }
 `
 
 const Column = styled.div`
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    align-items: center;
+
+    :nth-last-child(3) {
+      margin: 24px 0;
+    }
+
+    :nth-last-child(2) {
+      display: none;
+    }
+  }
 `
 
 const Title = styled.span`
-    font-family: ${FONTS.CLOUD_BOLD};
+  font-family: ${FONTS.CLOUD_BOLD};
 `
 
 const Text = styled.span`
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 `
 
 const Link = styled.a`
-    color: #fff;
+  color: #fff;
 `
 
 const Copyright = styled.div`
-    padding: 20px;
+  padding: 20px;
 
-    svg {
-      font-size: 20px;
-      margin: 0 4px;
-      color: rgba(255,255,255,.7);
-    }
+  svg {
+    font-size: 20px;
+    margin: 0 4px;
+    color: rgba(255,255,255,.7);
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
